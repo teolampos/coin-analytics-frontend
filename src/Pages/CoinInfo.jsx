@@ -56,12 +56,12 @@ const CoinInfo = () => {
                   >
                     {data.desc}
                   </span>{" "}
-                  <button
+                  {data.desc ? <button
                     className="text-slate-700 underline"
                     onClick={() => setShowMore(!showMore)}
                   >
                     {showMore ? "Show less" : "Show more"}
-                  </button>
+                  </button> : 'None'}
                 </td>
               </tr>
               <tr>

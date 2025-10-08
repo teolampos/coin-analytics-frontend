@@ -11,7 +11,6 @@ export const useFetch = (url) => {
         const res = await fetch(url);
         if (res.ok) {
           const coinData = await res.json();
-          console.log(coinData)
           setData(coinData);
           setLoading(false);
         } else {
